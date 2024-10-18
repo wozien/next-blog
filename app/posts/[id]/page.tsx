@@ -29,12 +29,12 @@ export default function Page ({ params }: PageProps) {
   const MDXContent = useMDXComponent(post.body.code);
 
   return (
-    <article className='mx-auto max-w-xl py-8 prose prose-slate'>
+    <article className='mx-auto max-w-xl py-8 prose prose-slate dark:prose-invert'>
       <div className='mb-8 text-center'>
         <h1 className='text-3xl font-bold'>
           { post.title }
         </h1>
-        <time dateTime={post.date} className='mb-1 text-xs text-gray-600'>
+        <time dateTime={post.date} className='mb-1 text-xs text-gray-600 dark:text-white'>
           编辑于 {  dayjs(post.date).format('YYYY-MM-DD HH:mm') }
         </time>
       </div>

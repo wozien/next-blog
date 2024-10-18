@@ -1,3 +1,5 @@
+import { ThemeProvider } from '@/components/ThemeProvider'
+import { ThemeSwitch } from '@/components/ThemeSwitch'
 import './globals.css';
 
 export default function RootLayout({
@@ -6,9 +8,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        {children}
+        <ThemeProvider>
+          <header className='flex justify-end p-4'>
+            <ThemeSwitch />
+          </header>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

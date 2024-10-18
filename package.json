@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.10",
     "contentlayer": "^0.3.4",
     "dayjs": "^1.11.13",
     "next": "14.2.15",
     "next-contentlayer": "^0.3.4",
     "next-mdx-remote": "^5.0.0",
+    "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
     "rehype-prism-plus": "^2.0.0",
